@@ -1,3 +1,3 @@
-# Goguryeo Core
+# East Online Core
 
-Core implementations for Goguryeo online
+Core implementations for East Online

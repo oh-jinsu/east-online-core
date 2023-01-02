@@ -1,11 +1,11 @@
 [package]
-name = "goguryeo_core"
+name = "east_online_core"
 version = "0.1.0"
 edition = "2021"
 description = "Core implementations for Goguryeo online"
 authors = ["ohjinsu@codersproduct.com"]
-documentation = "https://docs.rs/goguryeo_core"
-repository = "https://github.com/oh-jinsu/goguryeo_core"
+documentation = "https://docs.rs/east_online_core"
+repository = "https://github.com/oh-jinsu/east_online_core"
 readme = "README.md"
 keywords = []
 license = "MIT"
