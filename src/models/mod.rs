@@ -9,3 +9,7 @@ pub use id::Id;
 mod direction;
 
 pub use direction::Direction;
+
+mod rotation;
+
+pub use rotation::Rotation;

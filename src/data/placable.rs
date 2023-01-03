@@ -2,12 +2,12 @@ use std::collections::BTreeMap;
 
 use serde::{Deserialize, Serialize};
 
-use crate::models::Vector3;
+use crate::models::{Rotation, Vector3};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Placable {
     pub id: String,
-    pub rotation: u8,
+    pub rotation: Rotation,
 }
 
 impl Placable {
