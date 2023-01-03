@@ -1,6 +1,6 @@
 mod map_manifest;
 
-pub use map_manifest::MapManifestItem;
+pub use map_manifest::{MapManifest, MapManifestItem};
 
 mod placable;
 
