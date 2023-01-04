@@ -2,7 +2,7 @@ use std::collections::BTreeMap;
 
 use serde::{Deserialize, Serialize};
 
-use crate::models::{Rotation, Vector3};
+use super::{Rotation, Vector3};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Placable {

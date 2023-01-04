@@ -2,9 +2,7 @@ use std::collections::BTreeMap;
 
 use serde::{Deserialize, Serialize};
 
-use crate::models::Vector3;
-
-use super::Placable;
+use super::{Placable, Vector3};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Map {

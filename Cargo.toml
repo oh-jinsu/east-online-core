@@ -1,6 +1,6 @@
 [package]
 name = "east_online_core"
-version = "0.1.4"
+version = "0.2.0"
 edition = "2021"
 description = "Core implementations for Goguryeo online"
 authors = ["ohjinsu@codersproduct.com"]
