@@ -1,7 +1,7 @@
 pub trait ByteArray {
-    fn truncate_last(&self) -> &Self;
+    fn truncate_from_last(&self) -> &Self;
 
-    fn to_sized(&self, size: usize) -> Vec<u8>;
+    fn to_sized_vec(&self, size: usize) -> Vec<u8>;
 
     fn clone_into_array<T>(&self) -> T
     where
@@ -9,7 +9,7 @@ pub trait ByteArray {
 }
 
 impl ByteArray for [u8] {
-    fn truncate_last(&self) -> &Self {
+    fn truncate_from_last(&self) -> &Self {
         for i in 0..self.len() {
             let i = self.len() - 1 - i;
 
@@ -21,7 +21,7 @@ impl ByteArray for [u8] {
         &self
     }
 
-    fn to_sized(&self, size: usize) -> Vec<u8> {
+    fn to_sized_vec(&self, size: usize) -> Vec<u8> {
         let mut result = vec![];
 
         for i in 0..size {
