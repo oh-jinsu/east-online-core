@@ -1,3 +1,3 @@
-pub mod models;
+pub mod model;
 
-pub mod extensions;
+pub mod extension;
