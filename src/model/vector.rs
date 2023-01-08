@@ -7,6 +7,17 @@ pub struct Vector3 {
     pub z: i32,
 }
 
+impl Vector3 {
+    pub fn to_bytes(&self) -> Vec<u8> {
+        [
+            self.x.to_le_bytes(),
+            self.y.to_le_bytes(),
+            self.z.to_le_bytes(),
+        ]
+        .concat()
+    }
+}
+
 impl PartialOrd for Vector3 {
     fn partial_cmp(&self, other: &Self) -> Option<std::cmp::Ordering> {
         match self.y.partial_cmp(&other.y) {

@@ -2,10 +2,6 @@ mod direction;
 
 pub use direction::Direction;
 
-mod id;
-
-pub use id::Id;
-
 mod rotation;
 
 pub use rotation::Rotation;
